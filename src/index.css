@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  /* font-weight: normal; */
+  src: url("../src/assets/fonts/Montserrat-VariableFont_wght.ttf")
+}
+/* 
+:root {
+  --font-body-family: 'Montserrat', sans-serif;
+  --font-body-style: normal;
+  --font-body-weight: 400;
+  --font-body-weight-bold: 700;
+  --font-body-font-size: 14px;
+
+  --font-heading-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-heading-style: normal;
+  --font-heading-weight: 400;
+  --font-heading-font-size: 42px;
+
+  --font-subheading-family: 'Montserrat', sans-serif;
+  --font-subheading-style: normal;
+  --font-subheading-weight: 400;
+  --font-subheading-font-size: 24px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-size: var(--font-heading-font-size);
 }
+
+.subheading {
+  font-family: var(--font-subheading-family);
+  font-weight: var(--font-subheading-weight);
+  font-size: var(--font-subheading-font-size);
+  font-style: var(--font-subheading-style);
+}
+.sunheadingfont{
+  --font-subheading-family: 'Montserrat', sans-serif;
+}
+
+.bodytext {
+  font-family: var(--font-body-family);
+  font-weight: var(--font-body-weight);
+  font-size: var(--font-body-font-size);
+  font-style: var(--font-body-style);
+} */
+/* .font-body {
+  font-family: var(--font-body-family);
+} */
+
+
+/* @keyframes marquee-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-marquee-left {
+    animation: marquee-left linear infinite;
+  }
+  
+  .animate-marquee-right {
+    animation: marquee-right linear infinite;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+   */
